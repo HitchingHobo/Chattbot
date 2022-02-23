@@ -1,7 +1,5 @@
 from random import randint
 
-
-
 print('Hej och välkommen till min chattbot, ska du inte hälsa?')
 
 ##Huvudloop för att kunna testa
