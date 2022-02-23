@@ -38,16 +38,14 @@ while True:
             'Asså jag har typ sett alla Marvelfilmer',
             'Jag glum...'
         ]
-        return print(noll_svar_lista[index])
-        
-            
+        return print(noll_svar_lista[index])       
 
     ##Formatering av input för att kunna söka lättare
     infras = input()
     infras = infras.lower()
     infras = infras.split()
     
-    if infras == 'slut':
+    if 'slut' in infras:
         break
     
     sök_hälsning(infras)
