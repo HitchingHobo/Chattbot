@@ -15,6 +15,7 @@ while True:
             'hallå',
             'Näääämen haallååå elleer!',
             'Hejsan!'
+            'hoppsan är du här'
         ]
 
         ##Väljer en random svarsfras på en hälsning
@@ -53,4 +54,5 @@ while True:
     
     sök_hälsning(infras)
     
-    
+def test_sats(self):
+    print('Vafals!')
