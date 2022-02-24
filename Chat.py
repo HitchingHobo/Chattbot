@@ -14,7 +14,6 @@ while True:
             'godkväll', 
             'hallå',
             'Näääämen haallååå elleer!',
-            'poop'
         ]
         ##Väljer en random svarsfras på en hälsning
         if any(hälsning in infras for hälsning in hälsning_lista):
