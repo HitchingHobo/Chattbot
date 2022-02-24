@@ -8,13 +8,15 @@ while True:
     ##söker input efter hälsningsord
     def sök_hälsning(infras):
         hälsning_lista = [
-            'hej', 
-            'tjena', 
-            'goddag', 
+            'Hej!', 
+            'Tjena', 
+            'Goddag', 
             'godkväll', 
             'hallå',
             'Näääämen haallååå elleer!',
+            'Hejsan!'
         ]
+
         ##Väljer en random svarsfras på en hälsning
         if any(hälsning in infras for hälsning in hälsning_lista):
             index = randint(0,4)
