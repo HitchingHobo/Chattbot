@@ -49,7 +49,7 @@ def requested_info():
 ## Printar ut fint när film och info är vald
 def final_output(film, info):
     pass
-          
+
 
 ##Läser upp "tipslistan" och frågar om tipset filmen stämmer med önskad sökning
 def did_you_mean():
