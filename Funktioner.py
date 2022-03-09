@@ -9,7 +9,6 @@ from Getters import *
 def does_film_exists(value):
     for row in dictlist:
         if row['original_title'] == value:
-            print("Det funkar!")
             file.seek(0)
             return True
     file.seek(0)

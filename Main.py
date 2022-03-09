@@ -3,7 +3,7 @@ from Funktioner import *
 history_list = []
 
 while True: 
-    movie_title = input("Vilken film har du funderingar kring? ")
+    movie_title = input("What movie do you want to know more about? ")
     movie_title = movie_title.lower()
     movie_title = movie_title.title()
     if does_film_exists(movie_title) is True:
