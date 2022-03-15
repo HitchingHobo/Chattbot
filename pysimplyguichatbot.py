@@ -9,21 +9,22 @@ from Funktioner import *
 
 sg.theme('dark grey 10')
 
-layout = [ [sg.Text('Welcome to the chatbot')], 
-        [sg.Output(size=(100,50), key='-OUTPUT-')], 
-        [sg.InputText()], 
+layout = [ [sg.Text('Welcome to the chatbot')],
+        [sg.Output(size=(100,50), key='-OUTPUT-')],
+        [sg.Input(key='-INPUT-')],
         [sg.Button('Chat'), sg.Button('Exit')]]
 
 window = sg.Window('Chatbot', layout)
 
 while True:
-    event, values = window.read(timeout=20)
-    if event == 'Chat':
+        event, values = window.read()
+        if event == 'Chat':
             print('User', values)
-            if does_film_exists(values[0]) == True:
-                    choose_info(values[0])
-                    Return
-    if event in (sg.WIN_CLOSED, 'Exit'):
-        break
+            movie = values['-INPUT-']
+            if does_film_exists(movie) == True:
+                    choose_info(movie)
+        
+        if event in (sg.WIN_CLOSED, 'Exit'):
+                break
 
 window.close()
